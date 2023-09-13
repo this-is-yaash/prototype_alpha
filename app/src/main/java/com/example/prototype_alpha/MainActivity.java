@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(settingsIntent);
                 animateFab();
                 Toast.makeText(MainActivity.this, "Settings", Toast.LENGTH_SHORT).show();
             }
@@ -56,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent backupIntent = new Intent(MainActivity.this, BackupActivity.class);
+                startActivity(backupIntent);
                 animateFab();
                 Toast.makeText(MainActivity.this, "Backup", Toast.LENGTH_SHORT).show();
             }
