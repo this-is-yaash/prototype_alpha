@@ -19,27 +19,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/fab1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
+        app:icon="@drawable/settings_icon_light"
+        android:text="@string/settings"
         android:clickable="true"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/fab"
-        app:layout_constraintEnd_toEndOf="@+id/fab"
-        app:srcCompat="@drawable/settings_icon_light" />
+        app:layout_constraintEnd_toEndOf="@+id/fab"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/fab2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
+        app:icon="@drawable/backup_icon_light"
+        android:text="@string/backup"
         android:clickable="true"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/fab1"
-        app:layout_constraintEnd_toEndOf="@+id/fab1"
-        app:srcCompat="@drawable/backup_icon_light" />
+        app:layout_constraintEnd_toEndOf="@+id/fab1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
