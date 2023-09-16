@@ -11,7 +11,7 @@
 
     //color code #2
     <color name="primary_dark_alt">#27374D</color>
-    <color name="secondary_dark_alt">#526D82</color>
+    <color name="secondary_dark_alt">#27374D</color>
     <color name="primary_light_alt">#DDE6ED</color>
     <color name="secondary_light_alt">#9DB2BF</color>
 

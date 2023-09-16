@@ -29,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
 
         fabAnimationUtil = new FabAnimationUtil(this, fab, fab1, fab2);
 
+        //Floating Action button action are here fab,fab1,fab2
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 fabAnimationUtil.animateFab();
             }
         });
-
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    //for implementing the menu in the  toolbar
+
+    //for implementing the menu in the  toolbar (for now it has Search icon with searchbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
