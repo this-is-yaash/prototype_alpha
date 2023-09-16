@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
         if(isOpen){
             fab.startAnimation(rotateForward);
             fab1.startAnimation(fabClose);
+            //used another anim res for proper implementation because using
+            // same name results is slight position change
             fab2.startAnimation(fabClose2);
             fab1.setClickable(false);
             fab2.setClickable(false);
@@ -81,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
         } else {
             fab.startAnimation(rotateBackward);
             fab1.startAnimation(fabOpen);
+            //used another anim res for proper implementation because using
+            // same name results is slight position change
             fab2.startAnimation(fabOpen2);
             fab1.setClickable(true);
             fab2.setClickable(true);
